@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Moc5eO+mya7K7BafPnG424KMtDkEXguNi5tS/dAzjtGbHqWdY+cASWxCzUzsFMbFiJy/stwt582O7QOBf9JCvA==",
+  "dgSpecHash": "NJCEP7fx8Sbxj5P2fokNGwkdtjLVBmTUuMvl6ncswRoboIc0gQfgiaF48JIQ88+QBk1GkBnNMaN4+j2Nvr5j8Q==",
   "success": true,
-  "projectFilePath": "/Users/glebegor/Programming/projects/my/QLearnweb/backend/src/Qlearn.WebApi/Qlearn.WebApi.csproj",
+  "projectFilePath": "/Users/glebegor/Programming/projects/my/QLearnweb/backend/Qlearn.WebApi/Qlearn.WebApi.csproj",
   "expectedPackageFiles": [
     "/Users/glebegor/.nuget/packages/microsoft.aspnetcore.openapi/8.0.1/microsoft.aspnetcore.openapi.8.0.1.nupkg.sha512",
     "/Users/glebegor/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

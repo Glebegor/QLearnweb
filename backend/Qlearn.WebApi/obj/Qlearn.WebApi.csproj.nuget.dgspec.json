@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/glebegor/Programming/projects/my/QLearnweb/backend/src/Qlearn.WebApi/Qlearn.WebApi.csproj": {}
+    "/Users/glebegor/Programming/projects/my/QLearnweb/backend/Qlearn.WebApi/Qlearn.WebApi.csproj": {}
   },
   "projects": {
-    "/Users/glebegor/Programming/projects/my/QLearnweb/backend/src/Qlearn.WebApi/Qlearn.WebApi.csproj": {
+    "/Users/glebegor/Programming/projects/my/QLearnweb/backend/Qlearn.WebApi/Qlearn.WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/glebegor/Programming/projects/my/QLearnweb/backend/src/Qlearn.WebApi/Qlearn.WebApi.csproj",
+        "projectUniqueName": "/Users/glebegor/Programming/projects/my/QLearnweb/backend/Qlearn.WebApi/Qlearn.WebApi.csproj",
         "projectName": "Qlearn.WebApi",
-        "projectPath": "/Users/glebegor/Programming/projects/my/QLearnweb/backend/src/Qlearn.WebApi/Qlearn.WebApi.csproj",
+        "projectPath": "/Users/glebegor/Programming/projects/my/QLearnweb/backend/Qlearn.WebApi/Qlearn.WebApi.csproj",
         "packagesPath": "/Users/glebegor/.nuget/packages/",
-        "outputPath": "/Users/glebegor/Programming/projects/my/QLearnweb/backend/src/Qlearn.WebApi/obj/",
+        "outputPath": "/Users/glebegor/Programming/projects/my/QLearnweb/backend/Qlearn.WebApi/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/glebegor/.nuget/NuGet/NuGet.Config"
