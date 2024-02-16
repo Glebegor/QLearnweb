@@ -1,0 +1,16 @@
+/Users/glebegor/Programming/projects/my/QLearnweb/backend/Qlearn.Application/bin/Debug/net8.0/Qlearn.Application.deps.json
+/Users/glebegor/Programming/projects/my/QLearnweb/backend/Qlearn.Application/bin/Debug/net8.0/Qlearn.Application.dll
+/Users/glebegor/Programming/projects/my/QLearnweb/backend/Qlearn.Application/bin/Debug/net8.0/Qlearn.Application.pdb
+/Users/glebegor/Programming/projects/my/QLearnweb/backend/Qlearn.Application/bin/Debug/net8.0/Qlearn.Domain.dll
+/Users/glebegor/Programming/projects/my/QLearnweb/backend/Qlearn.Application/bin/Debug/net8.0/Qlearn.Domain.pdb
+/Users/glebegor/Programming/projects/my/QLearnweb/backend/Qlearn.Application/obj/Debug/net8.0/Qlearn.Application.csproj.AssemblyReference.cache
+/Users/glebegor/Programming/projects/my/QLearnweb/backend/Qlearn.Application/obj/Debug/net8.0/Qlearn.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/glebegor/Programming/projects/my/QLearnweb/backend/Qlearn.Application/obj/Debug/net8.0/Qlearn.Application.AssemblyInfoInputs.cache
+/Users/glebegor/Programming/projects/my/QLearnweb/backend/Qlearn.Application/obj/Debug/net8.0/Qlearn.Application.AssemblyInfo.cs
+/Users/glebegor/Programming/projects/my/QLearnweb/backend/Qlearn.Application/obj/Debug/net8.0/Qlearn.Application.csproj.CoreCompileInputs.cache
+/Users/glebegor/Programming/projects/my/QLearnweb/backend/Qlearn.Application/obj/Debug/net8.0/Qlearn.Application.sourcelink.json
+/Users/glebegor/Programming/projects/my/QLearnweb/backend/Qlearn.Application/obj/Debug/net8.0/Qlearn.Application.csproj.CopyComplete
+/Users/glebegor/Programming/projects/my/QLearnweb/backend/Qlearn.Application/obj/Debug/net8.0/Qlearn.Application.dll
+/Users/glebegor/Programming/projects/my/QLearnweb/backend/Qlearn.Application/obj/Debug/net8.0/refint/Qlearn.Application.dll
+/Users/glebegor/Programming/projects/my/QLearnweb/backend/Qlearn.Application/obj/Debug/net8.0/Qlearn.Application.pdb
+/Users/glebegor/Programming/projects/my/QLearnweb/backend/Qlearn.Application/obj/Debug/net8.0/ref/Qlearn.Application.dll

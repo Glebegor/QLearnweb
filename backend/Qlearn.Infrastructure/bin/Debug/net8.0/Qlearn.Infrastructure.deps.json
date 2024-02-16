@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Qlearn.Infrastructure/1.0.0": {
+        "dependencies": {
+          "Qlearn.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Qlearn.Infrastructure.dll": {}
+        }
+      },
+      "Qlearn.Domain/1.0.0": {
+        "runtime": {
+          "Qlearn.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Qlearn.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Qlearn.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

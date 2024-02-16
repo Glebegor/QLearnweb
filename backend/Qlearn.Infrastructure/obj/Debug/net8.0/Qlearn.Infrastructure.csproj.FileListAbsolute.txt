@@ -1,0 +1,16 @@
+/Users/glebegor/Programming/projects/my/QLearnweb/backend/Qlearn.Infrastructure/bin/Debug/net8.0/Qlearn.Infrastructure.deps.json
+/Users/glebegor/Programming/projects/my/QLearnweb/backend/Qlearn.Infrastructure/bin/Debug/net8.0/Qlearn.Infrastructure.dll
+/Users/glebegor/Programming/projects/my/QLearnweb/backend/Qlearn.Infrastructure/bin/Debug/net8.0/Qlearn.Infrastructure.pdb
+/Users/glebegor/Programming/projects/my/QLearnweb/backend/Qlearn.Infrastructure/bin/Debug/net8.0/Qlearn.Domain.dll
+/Users/glebegor/Programming/projects/my/QLearnweb/backend/Qlearn.Infrastructure/bin/Debug/net8.0/Qlearn.Domain.pdb
+/Users/glebegor/Programming/projects/my/QLearnweb/backend/Qlearn.Infrastructure/obj/Debug/net8.0/Qlearn.Infrastructure.csproj.AssemblyReference.cache
+/Users/glebegor/Programming/projects/my/QLearnweb/backend/Qlearn.Infrastructure/obj/Debug/net8.0/Qlearn.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/glebegor/Programming/projects/my/QLearnweb/backend/Qlearn.Infrastructure/obj/Debug/net8.0/Qlearn.Infrastructure.AssemblyInfoInputs.cache
+/Users/glebegor/Programming/projects/my/QLearnweb/backend/Qlearn.Infrastructure/obj/Debug/net8.0/Qlearn.Infrastructure.AssemblyInfo.cs
+/Users/glebegor/Programming/projects/my/QLearnweb/backend/Qlearn.Infrastructure/obj/Debug/net8.0/Qlearn.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/glebegor/Programming/projects/my/QLearnweb/backend/Qlearn.Infrastructure/obj/Debug/net8.0/Qlearn.Infrastructure.sourcelink.json
+/Users/glebegor/Programming/projects/my/QLearnweb/backend/Qlearn.Infrastructure/obj/Debug/net8.0/Qlearn.Infrastructure.csproj.CopyComplete
+/Users/glebegor/Programming/projects/my/QLearnweb/backend/Qlearn.Infrastructure/obj/Debug/net8.0/Qlearn.Infrastructure.dll
+/Users/glebegor/Programming/projects/my/QLearnweb/backend/Qlearn.Infrastructure/obj/Debug/net8.0/refint/Qlearn.Infrastructure.dll
+/Users/glebegor/Programming/projects/my/QLearnweb/backend/Qlearn.Infrastructure/obj/Debug/net8.0/Qlearn.Infrastructure.pdb
+/Users/glebegor/Programming/projects/my/QLearnweb/backend/Qlearn.Infrastructure/obj/Debug/net8.0/ref/Qlearn.Infrastructure.dll
