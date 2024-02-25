@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "RTciFQC3RztVRYGea62zl63jZCqWGhtFxNxKZikXrEA=",
+  "Source": "Qlearn.WebApi",
+  "BasePath": "_content/Qlearn.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
