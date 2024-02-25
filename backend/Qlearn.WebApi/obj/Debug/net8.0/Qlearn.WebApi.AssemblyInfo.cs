@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Qlearn.WebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d40c7a8f61e70ac084065650b3f46d4243912cd0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+00823114104551c058642740cb67abd6abccd72c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Qlearn.WebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Qlearn.WebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
