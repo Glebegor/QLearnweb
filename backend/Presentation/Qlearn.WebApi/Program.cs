@@ -1,6 +1,7 @@
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
-app.MapGet("/", () => "Hello World!");
+app.MapGet("/", () => "[Home page]");
+app.MapGet("/routerl", () => "[router page]");
 
 app.Run();
