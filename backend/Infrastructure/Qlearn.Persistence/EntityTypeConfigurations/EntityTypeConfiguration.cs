@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Qlearn.Domain;    
+using Qlearn.Domain;
 
-
+namespace EntityTypeConfigurations
 public class EntityTypeConfiguration : IEntityTypeConfiguration<Workspace>
 {
     public void Configure(EntityTypeBuilder<Workspace> builder)
