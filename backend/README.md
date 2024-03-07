@@ -2,6 +2,15 @@
 
 ## Architecture
 <p>Clean architecture, using c# APS.NET framework.</p>
+
+## Domain
+### Gate
+### User
+### Workspace
+### Tutorial
+### ForumTheme
+### Message
+
 ## Env
 
 ### .env
