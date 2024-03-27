@@ -3,6 +3,8 @@ using Qlearn.Domain;
 using Qlearn.Application.Interfaces;
 using Qlearn.Infrastructure.Persistence.EntityTypeConfigurations;
 
+namespace Persistence;
+
 public class WorkspaceDbContext : DbContext, IWorkspaceDbContext
 {
     public DbSet<Workspace> Workspaces { get; set; }

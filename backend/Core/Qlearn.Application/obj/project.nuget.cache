@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "0UlYsK9JpjT0OXwpAMc2S6wGsSrrs5iYudQnjk7PIB2WoIjLyYJc4o9b6k0o/S5PLlDjrRJ/T8ua1P8vRKoPqw==",
+  "dgSpecHash": "+faefOMhWx3wMGURjjvoGGBlKx8cM0LrM2btHnjVFONpPoC5IoF4eC0nmKkbdML9ukxXLyZCDK8aqtxbJ9KXXw==",
   "success": true,
   "projectFilePath": "/Users/glebegor/Programming/projects/my/QLearnweb/backend/Core/Qlearn.Application/Qlearn.Application.csproj",
   "expectedPackageFiles": [
+    "/Users/glebegor/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
     "/Users/glebegor/.nuget/packages/microsoft.entityframeworkcore/8.0.2/microsoft.entityframeworkcore.8.0.2.nupkg.sha512",
     "/Users/glebegor/.nuget/packages/microsoft.entityframeworkcore.abstractions/8.0.2/microsoft.entityframeworkcore.abstractions.8.0.2.nupkg.sha512",
     "/Users/glebegor/.nuget/packages/microsoft.entityframeworkcore.analyzers/8.0.2/microsoft.entityframeworkcore.analyzers.8.0.2.nupkg.sha512",

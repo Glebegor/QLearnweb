@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Qlearn.Domain;
 
 namespace EntityTypeConfigurations
-public class EntityTypeConfiguration : IEntityTypeConfiguration<Workspace>
+public class WorkspaceConfiguration : IEntityTypeConfiguration<Workspace>
 {
     public void Configure(EntityTypeBuilder<Workspace> builder)
     {
