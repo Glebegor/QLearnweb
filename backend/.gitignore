@@ -1,0 +1,27 @@
+
+
+# folders
+.idea
+.idea/
+obj
+obj/
+bin
+bin/
+
+# files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.log
+*.log.*
+*.log-*
+*.log/*
+*.log-*/
+*.log.*
+token
+cache
+.cache
+.cache/
+__pycharm__
