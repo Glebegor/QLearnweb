@@ -1,4 +1,0 @@
-
-runapp:
-buildapp:
-#rundb:
