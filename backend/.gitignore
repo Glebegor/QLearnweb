@@ -1,0 +1,20 @@
+
+# Cache files
+.idea
+.idea/
+secret_key
+secret_key/
+token
+token/
+obj
+obj/
+object
+object/
+
+# Ignore envs
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env.db 
