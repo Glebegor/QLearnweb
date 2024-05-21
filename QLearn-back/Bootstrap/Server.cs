@@ -1,7 +1,7 @@
 using System.Net;
 using System.Net.Sockets;
 
-namespace backend.Bootstrap;
+namespace QLearn.Bootstrap;
 
 public class Server
 {
@@ -20,7 +20,7 @@ public class Server
         httpListener.Prefixes.Add($"http://{this.url}/");
     }
     
-    public async Task Run()
+    public static async Task Run()
     {
         Console.WriteLine($"Server started at {this.url}");
         Console.WriteLine("________________________________________________________");

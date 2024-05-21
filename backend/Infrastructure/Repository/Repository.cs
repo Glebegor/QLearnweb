@@ -1,4 +1,4 @@
-namespace QLearn.Infrastructure.Repository;
+namespace backend.Infrastructure.Repository;
 
 public class Repository
 {

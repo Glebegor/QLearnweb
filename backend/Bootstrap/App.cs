@@ -1,4 +1,4 @@
-namespace QLearn.Bootstrap;
+namespace backend.Bootstrap;
 
 
 public class App
