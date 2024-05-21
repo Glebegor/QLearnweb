@@ -23,6 +23,7 @@ public class Server
     public static async Task Run()
     {
         Console.WriteLine($"Server started at {this.url}");
+        Console.WriteLine("________________________________________________________");
         while (true)
         {
             
