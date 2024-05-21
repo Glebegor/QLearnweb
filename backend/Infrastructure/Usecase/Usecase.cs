@@ -1,4 +1,4 @@
-namespace DefaultNamespace;
+namespace QLearn.Infrastructure.Usecase;
 
 public class Usecase
 {
