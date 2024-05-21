@@ -1,6 +1,6 @@
-﻿using backend.Bootstrap;
+﻿using QLearn.Bootstrap;
 
-namespace backend;
+namespace QLearn;
 
 public class Program
 {

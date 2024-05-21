@@ -1,4 +1,4 @@
-namespace backend.Bootstrap;
+namespace QLearn.Bootstrap;
 
 
 public class Config
