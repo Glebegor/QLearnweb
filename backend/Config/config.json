@@ -1,0 +1,12 @@
+{
+  "Server": {
+    "HOST": "localhost",
+    "PORT": 5500
+  },
+  "Database": {
+    "HOST": "localhost",
+    "PORT": 5463,
+    "NAME": "qlearn-db",
+    "USER": "root"
+  }
+}

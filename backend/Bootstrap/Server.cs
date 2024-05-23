@@ -5,28 +5,44 @@ namespace backend.Bootstrap;
 
 public class Server
 {
-    public HttpListener httpListener;
+    public HttpListener HttpListener;
+    private Config config;
+    private Logger logger;
+    
     private int port;
     private string host;
     private string url;
+    private Database database;
+
     
-    public Server(string host, int port)
+    public Server(Config config, Logger logger, Database database)
     {
-        this.httpListener = new HttpListener();
-        this.port = port;
-        this.host = host;
+        this.HttpListener = new HttpListener();
+        this.config = config;
+        this.logger = logger;
+        this.database = database;
+        
+        this.port = config.Server.PORT;
+        this.host = config.Server.HOST;
         this.url = $"{this.host}:{this.port}";
         
-        httpListener.Prefixes.Add($"http://{this.url}/");
+        HttpListener.Prefixes.Add($"http://{this.url}/");
     }
     
     public async Task Run()
     {
         Console.WriteLine($"Server started at {this.url}");
         Console.WriteLine("________________________________________________________");
-        while (true)
+        this.HttpListener.Start();
+        ThreadPool.QueueUserWorkItem((o) =>
         {
-            
-        }
+            while (this.HttpListener.IsListening)
+            {
+                HttpListenerContext context = this.HttpListener.GetContext();
+                Console.WriteLine("Request received");
+            }
+        });
+        Console.ReadKey();
+        this.HttpListener.Stop();
     }
 }
