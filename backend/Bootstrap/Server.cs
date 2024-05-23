@@ -24,9 +24,16 @@ public class Server
     {
         Console.WriteLine($"Server started at {this.url}");
         Console.WriteLine("________________________________________________________");
-        // while (true)
-        // {
-        //     
-        // }
+        this.HttpListener.Start();
+        ThreadPool.QueueUserWorkItem((o) =>
+        {
+            while (this.HttpListener.IsListening)
+            {
+                HttpListenerContext context = this.HttpListener.GetContext();
+                Console.WriteLine("Request received");
+            }
+        });
+        Console.ReadKey();
+        this.HttpListener.Stop();
     }
 }
