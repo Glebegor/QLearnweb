@@ -18,8 +18,9 @@ public class App
         this.config = GetConfig("./Config/config.json");
         // Logger init
         this.logger = new Logger(config);
+        
         // Server init
-        this.server = new Server(this.config.Server.HOST, this.config.Server.PORT);
+        this.server = new Server(this.config, this.logger);
     }
 
     public Config GetConfig(string path)

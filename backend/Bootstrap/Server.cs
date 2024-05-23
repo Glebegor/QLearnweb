@@ -6,15 +6,21 @@ namespace backend.Bootstrap;
 public class Server
 {
     public HttpListener HttpListener;
+    private Config config;
+    private Logger logger;
+    
     private int port;
     private string host;
     private string url;
     
-    public Server(string host, int port)
+    public Server(Config config, Logger logger)
     {
         this.HttpListener = new HttpListener();
-        this.port = port;
-        this.host = host;
+        this.config = config;
+        this.logger = logger;
+        
+        this.port = config.Server.PORT;
+        this.host = config.Server.HOST;
         this.url = $"{this.host}:{this.port}";
         
         HttpListener.Prefixes.Add($"http://{this.url}/");
