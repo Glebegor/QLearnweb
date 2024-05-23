@@ -11,16 +11,21 @@ public class App
     private Config config;
 
     private Logger logger;
+    private Database database;
     
     public App()
     {
         // Config init
         this.config = GetConfig("./Config/config.json");
+        
+        // Db init
+        this.database = new Database(this.config);
+        
         // Logger init
-        this.logger = new Logger(config);
+        this.logger = new Logger(this.config, this.database);
         
         // Server init
-        this.server = new Server(this.config, this.logger);
+        this.server = new Server(this.config, this.logger, this.database);
     }
 
     public Config GetConfig(string path)

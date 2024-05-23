@@ -1,6 +1,7 @@
 # QLearn application
 ## Description
 ## Stack
+-
 ## Comunication
 ## Docs
 ## Env
