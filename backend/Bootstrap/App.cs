@@ -13,9 +13,9 @@ public class App
     public App()
     {
         // Config init
-        this.config = GetConfig("../Config/config.json");
+        this.config = GetConfig("./Config/config.json");
         // Server init
-        this.server = new Server("localhost", 3500);
+        this.server = new Server(this.config.Server.HOST, this.config.Server.PORT);
     }
 
     public Config GetConfig(string path)
