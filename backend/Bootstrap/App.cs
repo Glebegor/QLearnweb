@@ -37,6 +37,6 @@ public class App
     public void Run()
     {
         
-        server.Run(new Controller());
+        server.Run(new Controller(), this.logger);
     }
 }
