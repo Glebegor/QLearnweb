@@ -1,5 +1,7 @@
+using System;
 using System.Net;
-using System.Net.Sockets;
+using System.Text;
+using backend.Api.Controller;
 
 namespace backend.Bootstrap;
 
@@ -29,7 +31,7 @@ public class Server
         HttpListener.Prefixes.Add($"http://{this.url}/");
     }
     
-    public async Task Run()
+    public async Task Run(Controller controller)
     {
         Console.WriteLine($"Server started at {this.url}");
         Console.WriteLine("________________________________________________________");
@@ -40,11 +42,21 @@ public class Server
             {
                 HttpListenerContext context = this.HttpListener.GetContext();
                 Console.WriteLine("Request received");
+                    
+                controller.HandleRequest(context);
                 
                 // Default Response
+                string jsonResponse = "{\"status\": \"Hello world\"}";
+                byte[] buffer = Encoding.UTF8.GetBytes(jsonResponse);
+                
                 context.Response.StatusCode = 200;
-                context.Response.ContentType = "text/plain";
-                context.Response.ContentLength64 = 0;
+                context.Response.ContentType = "application/json";
+                context.Response.ContentLength64 = buffer.Length;
+                
+                using (var output = context.Response.OutputStream)
+                {
+                    output.Write(buffer, 0, buffer.Length);
+                }
                 context.Response.OutputStream.Close();
             }
         });

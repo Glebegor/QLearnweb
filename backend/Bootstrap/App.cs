@@ -1,7 +1,7 @@
 using System;
 using System.IO;
 using System.Text.Json;
-
+using backend.Api.Controller;
 namespace backend.Bootstrap;
 
 
@@ -36,6 +36,7 @@ public class App
     }
     public void Run()
     {
-        server.Run();
+        
+        server.Run(new Controller());
     }
 }
