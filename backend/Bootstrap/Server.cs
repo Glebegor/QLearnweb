@@ -14,15 +14,13 @@ public class Server
     private int port;
     private string host;
     private string url;
-    private Database database;
 
     
-    public Server(Config config, Logger logger, Database database)
+    public Server(Config config, Logger logger)
     {
         this.HttpListener = new HttpListener();
         this.config = config;
         this.logger = logger;
-        this.database = database;
         
         this.port = config.Server.PORT;
         this.host = config.Server.HOST;

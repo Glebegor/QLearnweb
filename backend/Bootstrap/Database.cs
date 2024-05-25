@@ -1,9 +1,27 @@
-namespace backend.Bootstrap;
+using backend.Core.Common.Database;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 
-public class Database
+namespace backend.Bootstrap
 {
-    public Database(Config config)
+    public class Database
     {
-        // Database connection init
+        private readonly Config config;
+        private readonly IServiceCollection services;
+
+        public Database(Config config, IServiceCollection services)
+        {
+            config = config;
+            services = services;
+        }
+
+        public void ConfigureDatabase()
+        {
+            string connectionString = $"Host={config.Database.HOST};Port={config.Database.PORT};Database={config.Database.NAME};Username={config.Database.USER};Password={config.Database.PASSWORD}";
+
+            this.services.AddDbContext<AppDbContext>(options =>
+                options.UseNpgsql(connectionString));
+
+        }
     }
 }
