@@ -1,7 +1,6 @@
 using backend.Core.Common.Database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.AspNetCore.Mvc;
 
 namespace backend.Bootstrap
 {
@@ -23,7 +22,6 @@ namespace backend.Bootstrap
             this.services.AddDbContext<AppDbContext>(options =>
                 options.UseNpgsql(connectionString));
 
-            this.services.AddControllersWithViews();
         }
     }
 }

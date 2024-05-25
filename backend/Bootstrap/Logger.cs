@@ -3,12 +3,10 @@ namespace backend.Bootstrap;
 public class Logger
 {
     private Config config;
-    private Database database;
     
-    public Logger(Config config, Database database)
+    public Logger(Config config)
     {
         this.config = config;
-        this.database = database;
     }
 
     public void LoggToConsole(string message, ConsoleColor color)

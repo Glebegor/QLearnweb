@@ -13,10 +13,12 @@ public class DbService : IDbService
     // User-related methods
     public async Task<List<User>> GetAllUsersAsync()
     {
+        return null;
     }
 
     public async Task<User> GetUserByIdAsync(int id)
     {
+        return null;
     }
 
     public async Task AddUserAsync(User user)

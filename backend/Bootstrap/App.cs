@@ -12,7 +12,7 @@ public class App
     private Config config;
 
     private Logger logger;
-    private Database database;
+    // private Database database;
     
     public App()
     {
@@ -20,13 +20,13 @@ public class App
         this.config = GetConfig("./Config/config.json");
         
         // Db init
-        this.database = new Database(this.config);
+        // this.database = new Database(this.config);
         
         // Logger init
-        this.logger = new Logger(this.config, this.database);
+        this.logger = new Logger(this.config);
         
         // Server init
-        this.server = new Server(this.config, this.logger, this.database);
+        this.server = new Server(this.config, this.logger);
     }
 
     public Config GetConfig(string path)
