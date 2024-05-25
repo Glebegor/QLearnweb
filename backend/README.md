@@ -13,7 +13,7 @@
 SECRET_KEY="-secret-"
 
 DB_PASSWORD="pass"
-DB_ADMIN_PASS="pass"
+DB_ADMIN_PASSWORD="pass"
 
 ```
 

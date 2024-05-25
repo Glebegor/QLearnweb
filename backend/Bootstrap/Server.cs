@@ -1,5 +1,7 @@
+using System;
 using System.Net;
-using System.Net.Sockets;
+using System.Text;
+using backend.Api.Controller;
 
 namespace backend.Bootstrap;
 
@@ -29,17 +31,28 @@ public class Server
         HttpListener.Prefixes.Add($"http://{this.url}/");
     }
     
-    public async Task Run()
+    public async Task Run(Controller controller, Logger logger)
     {
         Console.WriteLine($"Server started at {this.url}");
         Console.WriteLine("________________________________________________________");
         this.HttpListener.Start();
+        
         ThreadPool.QueueUserWorkItem((o) =>
         {
             while (this.HttpListener.IsListening)
             {
                 HttpListenerContext context = this.HttpListener.GetContext();
-                Console.WriteLine("Request received");
+                    
+                string error = controller.HandleRequest(context);
+                
+                if (error != "")
+                {
+                    logger.LoggToConsole(error + "; " + context.Request.Url.AbsolutePath, ConsoleColor.Red);
+                }
+                else
+                {
+                    logger.LoggToConsole("Request handled; " + context.Request.Url.AbsolutePath, ConsoleColor.Green);
+                }
             }
         });
         Console.ReadKey();
