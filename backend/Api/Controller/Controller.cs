@@ -9,9 +9,8 @@ public class Controller
 {
     public string HandleRequest(HttpListenerContext context)
     {
-        // Default Response
         
-
         return "";
     }
+    
 }

@@ -47,11 +47,11 @@ public class Server
                 
                 if (error != "")
                 {
-                    logger.LoggToConsole(error, ConsoleColor.Red);
+                    logger.LoggToConsole(error + "; " + context.Request.Url.AbsolutePath, ConsoleColor.Red);
                 }
                 else
                 {
-                    logger.LoggToConsole("Request handled", ConsoleColor.Green);
+                    logger.LoggToConsole("Request handled; " + context.Request.Url.AbsolutePath, ConsoleColor.Green);
                 }
             }
         });
