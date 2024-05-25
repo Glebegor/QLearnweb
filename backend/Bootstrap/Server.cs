@@ -40,6 +40,12 @@ public class Server
             {
                 HttpListenerContext context = this.HttpListener.GetContext();
                 Console.WriteLine("Request received");
+                
+                // Default Response
+                context.Response.StatusCode = 200;
+                context.Response.ContentType = "text/plain";
+                context.Response.ContentLength64 = 0;
+                context.Response.OutputStream.Close();
             }
         });
         Console.ReadKey();
