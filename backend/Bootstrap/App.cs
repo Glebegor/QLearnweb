@@ -10,21 +10,18 @@ public class App
 {
     private Server server;
     private Config config;
+    private Database database;
 
     private Logger logger;
-    // private Database database;
     
     public App()
     {
         // Config init
         this.config = GetConfig("./Config/config.json");
-        
-        // Db init
-        // this.database = new Database(this.config);
-        
         // Logger init
         this.logger = new Logger(this.config);
-        
+        // Database init
+        this.database = new Database(this.config);
         // Server init
         this.server = new Server(this.config, this.logger);
     }

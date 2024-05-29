@@ -1,26 +1,19 @@
-using backend.Core.Common.Database;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
+using Npgsql;
 
 namespace backend.Bootstrap
 {
     public class Database
     {
         private readonly Config config;
-        private readonly IServiceCollection services;
+        public NpgsqlConnection Connection;
 
-        public Database(Config config, IServiceCollection services)
+        public Database(Config config)
         {
             config = config;
-            services = services;
-        }
-
-        public void ConfigureDatabase()
-        {
-            string connectionString = $"Host={config.Database.HOST};Port={config.Database.PORT};Database={config.Database.NAME};Username={config.Database.USER};Password={config.Database.PASSWORD}";
-
-            this.services.AddDbContext<AppDbContext>(options =>
-                options.UseNpgsql(connectionString));
+            
+            string connectionString = $"Host={config.Database.HOST};Port={config.Database.PORT};Database={config.Database.NAME};Username={config.Database.USER};Password={config.Database.PASSWORD}"; 
+            NpgsqlConnection connection = new NpgsqlConnection(connectionString);
+            this.Connection = connection;
 
         }
     }
