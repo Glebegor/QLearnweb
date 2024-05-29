@@ -1,4 +1,4 @@
-namespace backend.Core.Common.Database;
+namespace backend.Core.Models;
 
 
 public class User
