@@ -1,4 +1,7 @@
 using DotNetEnv;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Hosting;
 
 namespace Qlearn.WebApi
 {
@@ -20,18 +23,10 @@ namespace Qlearn.WebApi
                     config.AddJsonFile($"appsettings.{context.HostingEnvironment.EnvironmentName}.json", optional: true, reloadOnChange: true);
                     config.AddJsonFile("config.json", optional: true, reloadOnChange: true);
                     config.AddEnvironmentVariables();
-                    config.Add(new DotEnvConfigSource()); // Fixed typo here
+                    config.Add(new DotEnvConfigSource());
                 })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.ConfigureAppConfiguration((context, config) =>
-                    {
-                        var configuration = config.Build();
-                        var host = configuration["Server:Host"];
-                        var port = configuration["Server:Port"];
-                        webBuilder.UseUrls(new string[] { $"http://{host}:{port}"});
-                    });
-                    
                     webBuilder.UseStartup<Startup>();
                 });
     }    
