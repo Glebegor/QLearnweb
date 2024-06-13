@@ -1,6 +1,6 @@
 namespace Qlean.WebApi.Models
 {
-    public class Topic
+    public class TopicDTO
     {
         public int Id { get; set; }
         public int UserId { get; set; }

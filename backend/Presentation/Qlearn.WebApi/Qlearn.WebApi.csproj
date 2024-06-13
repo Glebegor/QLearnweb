@@ -15,4 +15,8 @@
 
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Infrastructure\Qlearn.Usecases\Qlearn.Usecases.csproj" />
+  </ItemGroup>
+
 </Project>

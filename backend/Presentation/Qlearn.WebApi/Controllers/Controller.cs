@@ -1,5 +1,0 @@
-
-namespace Qlearn.WebApi.Controllers
-{
-    
-}
