@@ -2,6 +2,8 @@ using DotNetEnv;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
+using Microsoft.AspNetCore.Mvc;
+[assembly: ApiController]
 
 namespace Qlearn.WebApi
 {

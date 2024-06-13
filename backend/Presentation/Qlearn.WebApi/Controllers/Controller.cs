@@ -1,6 +1,5 @@
-namespace DefaultNamespace;
 
-public class Controller
+namespace Qlearn.WebApi.Controllers
 {
     
 }
