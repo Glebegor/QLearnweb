@@ -6,6 +6,21 @@ namespace WebApi
     {
         public static void Main(string[] args)
         {
+            if (args[0] == "dev")
+            {
+                args[0] = "appsettings.Development.json";
+            } else if (args[0] == "prod")
+            {
+                args[0] = "appsettings.Product.json";
+            } else if (args[0] == "test")
+            {
+                args[0] = "appsettings.Test.json";
+            }
+            else
+            {
+                throw new Exception("Invalid environment");
+            }
+            
             CreateHostBuilder(args).Build().Run();
         }
         
@@ -13,10 +28,19 @@ namespace WebApi
             Host.CreateDefaultBuilder(args)
                 .ConfigureAppConfiguration((hostingContext, config) =>
                 {
-                    config.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
+                    config.SetBasePath(Directory.GetCurrentDirectory());
+                    config.AddJsonFile(args[0], optional: false, reloadOnChange: true);
                 })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
+
+                    var configuration = new ConfigurationBuilder()
+                        .AddJsonFile(args[0])
+                        .Build();
+                    
+                    var port = configuration.GetValue<string>("Server:Port");
+                    var host = configuration.GetValue<string>("Server:Host");
+                    webBuilder.UseUrls("http://" + host + ":" + port);
                     webBuilder.UseStartup<Startup>();
                 });
     }
