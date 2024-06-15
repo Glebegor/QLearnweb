@@ -2,6 +2,8 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 using Microsoft.Extensions.DependencyInjection;
+using Core.Interfaces;
+using Infrastructure.Services;
 
 namespace WebApi
 {
@@ -21,6 +23,8 @@ namespace WebApi
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Qlearn Api", Version = "v1" });
             });
+            
+            services.AddScoped<ITopicService, TopicService>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -30,14 +34,10 @@ namespace WebApi
                 app.UseDeveloperExceptionPage();
             }
             
-            // Enable middleware to serve generated Swagger as a JSON endpoint
             app.UseSwagger();
 
-            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.),
-            // specifying the Swagger JSON endpoint
             app.UseSwaggerUI(c =>
             {
-                // Optionally, specify the Swagger UI version
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Qlearn Api v1");
             });
 

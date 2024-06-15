@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Core.Interfaces;
 
 namespace WebApi.Controllers
 {
@@ -6,34 +7,40 @@ namespace WebApi.Controllers
     [Route("api/v1/[controller]")]
     public class TopicController : ControllerBase
     {
+        private readonly ITopicService _service;
+        public TopicController(ITopicService service)
+        {
+            _service = service;
+        }
+        
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok("Hello World");
+            return Ok(_service.TestMethod());
         }
         
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
-            return Ok("Hello World");
+            return Ok(_service.TestMethod());
         }
         
         [HttpPost]
         public IActionResult Post()
         {
-            return Ok("Hello World");
+            return Ok(_service.TestMethod());
         }
         
         [HttpPut("{id}")]
         public IActionResult Put(int id)
         {
-            return Ok("Hello World");
+            return Ok(_service.TestMethod());
         }
         
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
-            return Ok("Hello World");
+            return Ok(_service.TestMethod());
         }
     }
 };
