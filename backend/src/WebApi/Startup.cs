@@ -1,4 +1,9 @@
-
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.OpenApi.Models;
+using Microsoft.Extensions.DependencyInjection;
+using Core.Interfaces;
+using Infrastructure.Services;
 
 namespace WebApi
 {
@@ -13,6 +18,13 @@ namespace WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Qlearn Api", Version = "v1" });
+            });
+            
+            services.AddScoped<ITopicService, TopicService>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -21,6 +33,13 @@ namespace WebApi
             {
                 app.UseDeveloperExceptionPage();
             }
+            
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Qlearn Api v1");
+            });
 
             app.UseRouting();
 
