@@ -1,4 +1,10 @@
-
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Routing;
+using Microsoft.Extensions.Logging;
 
 namespace WebApi
 {
@@ -20,8 +26,10 @@ namespace WebApi
             {
                 throw new Exception("Invalid environment");
             }
+            var host = CreateHostBuilder(args).Build();
+
             
-            CreateHostBuilder(args).Build().Run();
+            host.Run();
         }
         
         public static IHostBuilder CreateHostBuilder(string[] args) =>
