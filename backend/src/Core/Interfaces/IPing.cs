@@ -2,6 +2,6 @@ namespace Core.Interfaces
 {
     public interface IPingService
     {
-        string Ping();
+        public bool Ping();
     }
 }
