@@ -16,31 +16,31 @@ namespace WebApi.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok(_service.TestMethod());
+            return Ok(_service.TestMethod() + " Get");
         }
         
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
-            return Ok(_service.TestMethod());
+            return Ok(_service.TestMethod() + " Get");
         }
         
         [HttpPost]
         public IActionResult Post()
         {
-            return Ok(_service.TestMethod());
+            return Ok(_service.TestMethod() + " Post");
         }
         
         [HttpPut("{id}")]
         public IActionResult Put(int id)
         {
-            return Ok(_service.TestMethod());
+            return Ok(_service.TestMethod() + " Put");
         }
         
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
-            return Ok(_service.TestMethod());
+            return Ok(_service.TestMethod() + " Delete");
         }
     }
 };
