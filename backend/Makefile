@@ -1,3 +1,6 @@
+# Description: Makefile for backend
+
+# App init
 run-dev:
 	dotnet run --project src/WebApi/WebApi.csproj dev
 run-prod:
@@ -5,6 +8,7 @@ run-prod:
 run-test:
 	dotnet run --project src/WebApi/WebApi.csproj test
 
+# Database
 run-dev-db:
 	docker run --name="qlearn-dev-db" -e POSTGRES_PASSWORD="123321" -p 5436:5432 -d --rm postgres	
 run-prod-db:
@@ -12,3 +16,10 @@ run-prod-db:
 run-test-db:
 	docker run --name="qlearn-test-db" -e POSTGRES_PASSWORD="123321" -p 8745:5432 -d --rm postgres	
 	
+# Migrates
+run-create-migrates:
+	dotnet ef migrations add InitialCreate --project ./src/Core/Core.csproj --startup-project ./src/WebApi/WebApi.csproj
+run-update-migrates:
+	dotnet ef database update --project ./src/Core/Core.csproj --startup-project ./src/WebApi/WebApi.csproj
+run-remove-migrates:
+	dotnet ef migrations remove --project ./src/Core/Core.csproj --startup-project ./src/WebApi/WebApi.csproj

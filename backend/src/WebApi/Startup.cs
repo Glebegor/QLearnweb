@@ -1,9 +1,13 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
-using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Core.Interfaces;
 using Infrastructure.Services;
+using Core.Entities;
+using Microsoft.EntityFrameworkCore.Design;
 
 namespace WebApi
 {
@@ -18,6 +22,13 @@ namespace WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddRouting();
+            services.AddLogging();
+            
+            var connectionString = Configuration.GetSection("Db")["Url"];
+            services.AddDbContext<ApplicationDbContext>(options =>
+                options.UseNpgsql(connectionString)
+            );
             
             services.AddSwaggerGen(c =>
             {
@@ -25,6 +36,7 @@ namespace WebApi
             });
             
             services.AddScoped<ITopicService, TopicService>();
+            services.AddScoped<IPingService, PingService>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
