@@ -10,7 +10,7 @@ namespace Core.Entities
         {
         }
 
-        public DbSet<TopicDTO> Topics { get; set; }
+        public DbSet<Topic> Topics { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

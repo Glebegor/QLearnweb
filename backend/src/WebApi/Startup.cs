@@ -1,10 +1,13 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Core.Interfaces;
 using Infrastructure.Services;
 using Core.Entities;
+using Microsoft.EntityFrameworkCore.Design;
 
 namespace WebApi
 {

@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 namespace Core.DTO
 {
-    public class TopicDTO
+    public class Topic
     {
         public int Id { set; get; }
         public string Title { set; get; }
