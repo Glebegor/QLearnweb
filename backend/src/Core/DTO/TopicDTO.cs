@@ -1,10 +1,12 @@
+using Microsoft.EntityFrameworkCore;
 namespace Core.DTO
 {
     public class TopicDTO
     {
-        public string Title;
-        public string Description;
-        public int UserId;
+        public int Id { set; get; }
+        public string Title { set; get; }
+        public string Description { set; get; }
+        public int UserId { set; get; }
     }
 }
 
