@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
-namespace Core.DTO
+
+namespace Core.Entities
 {
     public class Topic
     {

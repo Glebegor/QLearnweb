@@ -31,7 +31,7 @@ namespace WebApi
             
             host.Run();
         }
-        
+
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .ConfigureAppConfiguration((hostingContext, config) =>
@@ -45,12 +45,13 @@ namespace WebApi
                     var configuration = new ConfigurationBuilder()
                         .AddJsonFile(args[0])
                         .Build();
-                    
+
                     var port = configuration.GetValue<string>("Server:Port");
                     var host = configuration.GetValue<string>("Server:Host");
                     webBuilder.UseUrls("http://" + host + ":" + port);
                     webBuilder.UseStartup<Startup>();
                 });
+
     }
 }
 

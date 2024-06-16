@@ -22,10 +22,13 @@ namespace WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddRouting();
+            services.AddLogging();
             
-            var connectionString = Configuration.GetSection("Db")["url"];
+            var connectionString = Configuration.GetSection("Db")["Url"];
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseNpgsql(connectionString));
+                options.UseNpgsql(connectionString)
+            );
             
             services.AddSwaggerGen(c =>
             {
