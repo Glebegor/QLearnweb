@@ -30,6 +30,7 @@ namespace WebApi
             });
             
             services.AddScoped<ITopicService, TopicService>();
+            services.AddScoped<IPingService, PingService>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
