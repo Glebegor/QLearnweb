@@ -19,6 +19,7 @@ namespace WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            
             var connectionString = Configuration.GetSection("Db")["url"];
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseNpgsql(connectionString));
