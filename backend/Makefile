@@ -23,3 +23,5 @@ run-update-migrates:
 	dotnet ef database update --project ./src/Core/Core.csproj --startup-project ./src/WebApi/WebApi.csproj
 run-remove-migrates:
 	dotnet ef migrations remove --project ./src/Core/Core.csproj --startup-project ./src/WebApi/WebApi.csproj
+
+

@@ -26,7 +26,7 @@ namespace Core.Entities
         {
             IConfigurationRoot configuration = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.Development.json")
+                .AddJsonFile("appsettings.Development.json") // Change to setup database
                 .Build();
 
             var builder = new DbContextOptionsBuilder<ApplicationDbContext>();
