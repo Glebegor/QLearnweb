@@ -9,11 +9,6 @@ bin
 bin/
 
 # files
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
 *.log
 *.log.*
 *.log-*
@@ -25,3 +20,12 @@ cache
 .cache
 .cache/
 __pycharm__
+
+
+# env
+appsettings.Product.json
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
