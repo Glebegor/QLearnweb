@@ -4,6 +4,6 @@
 ## Install
 ## Docs
 ## Configuration
-## Science work 
-## License
-## Helpers
+## Science work
+## Contributors
+- Hlib Arseniuk
